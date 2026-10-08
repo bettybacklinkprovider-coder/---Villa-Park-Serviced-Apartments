@@ -1,0 +1,6 @@
+{
+  "name": "فيلا بارك للشقق المخدومة - Villa Park Serviced Apartments",
+  "description": "Premium serviced apartments in King Fahd Road, Al Khobar, Saudi Arabia. Experience modern comfort, privacy, and five-star hospitality.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
