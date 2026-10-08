@@ -99,6 +99,14 @@ export default function Footer({ onNavigate, isArabic, onOpenBooking }: FooterPr
                   {isArabic ? 'اتصل بنا والموقع' : 'Contact & Location'}
                 </button>
               </li>
+              <li>
+                <button
+                  onClick={() => { onNavigate('#/admin'); scrollToTop(); }}
+                  className={`hover:text-[#D4AF37] transition-colors duration-300 text-[#D4AF37] flex items-center gap-1.5 font-semibold ${isArabic ? 'text-right' : 'text-left'}`}
+                >
+                  {isArabic ? 'لوحة التحكم بالإدارة' : 'Admin Operations Panel'}
+                </button>
+              </li>
             </ul>
           </div>
 

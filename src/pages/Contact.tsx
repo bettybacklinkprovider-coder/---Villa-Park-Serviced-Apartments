@@ -61,6 +61,25 @@ export default function Contact({ isArabic, onOpenBooking }: ContactProps) {
     
     // Simulate luxury API submission delay
     setTimeout(() => {
+      // Save contact inquiry locally
+      const newInquiry = {
+        id: `CI-${Math.floor(1000 + Math.random() * 9000)}`,
+        name,
+        phone,
+        email,
+        message,
+        status: 'unread',
+        createdAt: new Date().toISOString()
+      };
+
+      try {
+        const existing = JSON.parse(localStorage.getItem('villa_park_contacts') || '[]');
+        existing.unshift(newInquiry);
+        localStorage.setItem('villa_park_contacts', JSON.stringify(existing));
+      } catch (e) {
+        console.error('Error saving contact inquiry locally:', e);
+      }
+
       setIsSubmitting(false);
       setIsSubmitted(true);
       setErrors({});

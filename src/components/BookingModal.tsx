@@ -109,6 +109,32 @@ export default function BookingModal({
 
     // Generate random luxury booking reference
     const ref = `VP-${Math.floor(100000 + Math.random() * 900000)}`;
+
+    // Save to local database for Admin Dashboard tracking
+    const newBooking = {
+      id: ref,
+      ref,
+      apartmentId,
+      checkIn,
+      checkOut,
+      fullName,
+      phone,
+      email,
+      guests,
+      totalPrice,
+      totalNights,
+      status: 'pending',
+      createdAt: new Date().toISOString()
+    };
+
+    try {
+      const existing = JSON.parse(localStorage.getItem('villa_park_bookings') || '[]');
+      existing.unshift(newBooking);
+      localStorage.setItem('villa_park_bookings', JSON.stringify(existing));
+    } catch (e) {
+      console.error('Error saving booking locally:', e);
+    }
+
     setBookingRef(ref);
     setIsSubmitted(true);
   };

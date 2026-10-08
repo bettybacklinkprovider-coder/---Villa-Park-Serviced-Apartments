@@ -6,6 +6,7 @@ import Home from './pages/Home';
 import Apartments from './pages/Apartments';
 import Amenities from './pages/Amenities';
 import Contact from './pages/Contact';
+import Admin from './pages/Admin';
 
 export default function App() {
   const [currentPath, setCurrentPath] = useState('#/');
@@ -22,11 +23,12 @@ export default function App() {
     };
 
     // Initialize routing hash if not set
-    if (!window.location.hash) {
+    if (!window.location.hash || window.location.hash === '') {
       window.location.hash = '#/';
-    } else {
-      syncHash();
     }
+    
+    // Always sync hash state immediately on component initialization
+    syncHash();
 
     window.addEventListener('hashchange', syncHash);
     return () => {
@@ -81,6 +83,12 @@ export default function App() {
           <Contact
             isArabic={isArabic}
             onOpenBooking={handleOpenBooking}
+          />
+        );
+      case '#/admin':
+        return (
+          <Admin
+            isArabic={isArabic}
           />
         );
       default:
