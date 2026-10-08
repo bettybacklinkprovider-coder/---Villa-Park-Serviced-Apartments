@@ -85,7 +85,6 @@ export default function Contact({ isArabic, onOpenBooking }: ContactProps) {
           <img
             src="https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=1200&q=80"
             alt="Villa Park Luxury Serviced Apartments Reception Desk"
-            referrerPolicy="no-referrer"
             className="w-full h-full object-cover filter brightness-[0.3]"
           />
           <div className="absolute inset-0 bg-gradient-to-t from-[#0B0616] via-transparent to-black/60" />

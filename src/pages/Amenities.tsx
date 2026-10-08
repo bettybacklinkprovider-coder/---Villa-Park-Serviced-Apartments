@@ -111,7 +111,6 @@ export default function Amenities({ isArabic, onOpenBooking }: AmenitiesProps) {
           <img
             src="https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=1200&q=80"
             alt="Villa Park Luxury Serviced Amenities Background"
-            referrerPolicy="no-referrer"
             className="w-full h-full object-cover filter brightness-[0.3]"
           />
           <div className="absolute inset-0 bg-gradient-to-t from-[#0B0616] via-transparent to-black/60" />
@@ -153,7 +152,6 @@ export default function Amenities({ isArabic, onOpenBooking }: AmenitiesProps) {
                   <img
                     src={amenity.image}
                     alt={isArabic ? amenity.titleAr : amenity.titleEn}
-                    referrerPolicy="no-referrer"
                     className="w-full h-full object-cover group-hover:scale-104 transition-transform duration-500 filter brightness-[0.85] saturate-[0.9]"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-[#170E2B] via-transparent to-transparent" />

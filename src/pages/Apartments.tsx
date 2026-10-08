@@ -20,7 +20,6 @@ export default function Apartments({ isArabic, onOpenBookingWithRoom }: Apartmen
           <img
             src="https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&fit=crop&w=1200&q=80"
             alt="Villa Park Luxury Suite Bedroom"
-            referrerPolicy="no-referrer"
             className="w-full h-full object-cover filter brightness-[0.35]"
           />
           <div className="absolute inset-0 bg-gradient-to-t from-[#0B0616] via-transparent to-black/60" />
@@ -73,7 +72,6 @@ export default function Apartments({ isArabic, onOpenBookingWithRoom }: Apartmen
                       <img
                         src={apt.image}
                         alt={isArabic ? apt.nameAr : apt.nameEn}
-                        referrerPolicy="no-referrer"
                         className="w-full h-[400px] object-cover transition-transform duration-700 group-hover:scale-104"
                       />
                       <div className="absolute inset-0 bg-[#0B0616]/10 group-hover:bg-transparent transition-all" />

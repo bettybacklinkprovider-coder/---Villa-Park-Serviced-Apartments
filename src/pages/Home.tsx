@@ -37,7 +37,6 @@ export default function Home({ onNavigate, isArabic, onOpenBookingWithRoom }: Ho
           <img
             src="https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=1600&q=80"
             alt="Villa Park Serviced Apartments Lobby"
-            referrerPolicy="no-referrer"
             className="w-full h-full object-cover scale-102 filter brightness-[0.4] saturate-[0.8]"
           />
           <div className="absolute inset-0 bg-gradient-to-t from-[#0B0616] via-black/40 to-transparent" />
@@ -116,7 +115,6 @@ export default function Home({ onNavigate, isArabic, onOpenBookingWithRoom }: Ho
                 <img
                   src="https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?auto=format&fit=crop&w=800&q=80"
                   alt="Luxury Villa Park interior living room"
-                  referrerPolicy="no-referrer"
                   className="w-full h-96 object-cover group-hover:scale-103 transition-transform duration-700"
                 />
                 {/* Decorative overlay mesh */}
@@ -201,7 +199,6 @@ export default function Home({ onNavigate, isArabic, onOpenBookingWithRoom }: Ho
                   <img
                     src={apt.image}
                     alt={isArabic ? apt.nameAr : apt.nameEn}
-                    referrerPolicy="no-referrer"
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-[#170E2B] via-transparent to-transparent" />
@@ -289,7 +286,6 @@ export default function Home({ onNavigate, isArabic, onOpenBookingWithRoom }: Ho
                   <img
                     src={amenity.image}
                     alt={isArabic ? amenity.nameAr : amenity.nameEn}
-                    referrerPolicy="no-referrer"
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 filter brightness-90"
                   />
                   {/* Subtle dark gradient overlay */}
@@ -391,7 +387,6 @@ export default function Home({ onNavigate, isArabic, onOpenBookingWithRoom }: Ho
                 <img
                   src="https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&fit=crop&w=800&q=80"
                   alt="Luxury penthouse design in Al Khobar"
-                  referrerPolicy="no-referrer"
                   className="rounded-xl object-cover h-[500px] w-full border border-[#2A1B4B]"
                 />
               </div>
